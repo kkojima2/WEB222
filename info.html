@@ -1,4 +1,4 @@
-<!DOCTYPE hitml>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,16 +7,19 @@
   <script src="info.js"></script>
 
   <title>Kaori Kojima</title>
-  <div class="logo">
-    <a href="#">
-      <p><img src="logo.png" alt="logo" width="150px" height="100px" /></p>
-    </a>
-    <p class="title">WEB 222 -FINAL-</p>
-  </div>
+
 </head>
 
 
 <body>
+
+  <div class="logo">
+    <a href="#">
+      <p><img src="logo.png" alt="logo" width="150" height="100" /></p>
+    </a>
+    <p class="title">WEB 222 -FINAL-</p>
+  </div>
+
   <nav>
     <ul class="menu">
       <li><a href="honesty.html">Honesty</a></li>
@@ -43,31 +46,33 @@
           <input id='lastname' type="text" /><br />
         </div>
         <div class="form-adj">
-          <label for="password">Password</label><br />
+          <label for="password1">Password</label><br />
           <input id='password1' type="password" /><br />
         </div>
         <div class="form-adj">
-          <label for="password">Confirm Password</label><br />
+          <label for="password2">Confirm Password</label><br />
           <input id='password2' type="password" /><br />
         </div>
         <div class="form-adj">
-          <label for="usename">User Name</label><br />
+          <label for="username">User Name</label><br />
           <input id='username' type="text" />
         </div>
         <div class="radio-title">
-          <label for="education">Education Status</label>
+          <label>Education Status</label>
         </div>
-        <div class="radio-form">
+        <div class="radio-form" id="education">
           <ul>
             <li>
-              <input type="radio" name="status" class="status" id="status1" value="Graduated" />Graduated
+              <input type="radio" name="status" class="status" id="status1" value="Graduated" />
+              <label for="status1">Graduated</label>
             </li>
             <li>
-              <input type="radio" name="status" class="status" id="status2" value="Currentry Enrolled" />Currentry
-              enrolled
+              <input type="radio" name="status" class="status" id="status2" value="Currentry Enrolled" />
+              <label for="status2">Currentry enrolled</label>
             </li>
             <li>
-              <input type="radio" name="status" class="status" id="status3" value="Did not graduate" />Did not graduate
+              <input type="radio" name="status" class="status" id="status3" value="Did not graduate" />
+              <label for="status3">Did not graduate</label>
             </li>
           </ul>
         </div>
@@ -80,9 +85,12 @@
           <input id="age" type="number" min="18" max="60" />
           <br />
         </div>
-        <input type="submit"></input>
+        <input type="submit" />
         <button onclick="clearForm();return false;">Clear</button>
       </form>
+      <!-- </div> -->
+
+
     </div>
 
     <div id="error">
@@ -90,7 +98,6 @@
       <div id="error-list"></div>
     </div>
 
-  </div>
   </div>
   <div id="footer">
     <a href="https://github.com/kkojima2/WEB222">Git Hub LINK</a>
